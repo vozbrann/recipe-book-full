@@ -1,0 +1,15 @@
+{
+  "name": "recipe-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
